@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+}
+
+p {
+  margin: 0;
+}
+
+/* ナビゲーション部分の配置 */
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto;
+  max-width: 960px;
+}
+
+/* ナビ部分の文字 */
+.header-inner a {
+ color: black;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+/* メイン写真を画面内におさめる */
+.main-camera {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* My Profileの加工 */
+h1 {
+  border: 1px solid  #000000;
+  font-size: 34px;
+  margin: 0 0 0 20px;
+  padding: 0px 20px;
+}
+
+
+/* navを横並び */
+.menu {
+  display: flex;
+  padding-left: 0;
+}
+
+/* ナビの文字加工 */
+nav li {
+  margin: 0 20px;
+  list-style: none;
+}
+
+/* ナビの文字サイズ */
+nav a {
+  font-size: 34px;
+}
+
+/* 各セクションの見出し文字 */
+h2 {
+  margin: 0;
+  padding: 60px 0 40px;
+  text-align: center;
+  font-size: 34px;
+}
+
+p,
+li {
+  font-size: 18px;
+}
+
+/* アバウト */
+.about-inner {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 960px;
+}
+
+/* 画像 */
+img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*  名前*/
+.name  {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* 顔写真 */
+.picture {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+}
+
+/* 顔写真の文 */
+.contents {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ワークス */
+.works-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+/* ワークスの画像と説明文 */
+.item {
+  margin: 0 auto;
+  padding-bottom: 60px;
+  width: 25%;
+}
+
+/* フッター */
+footer p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+
+/* 横幅が767pxまでの場合 */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 28px;
+  }
+  
+  h2 {
+    padding: 30px 0 20px;
+    font-size: 28px;
+  }
+
+  nav li {
+    margin: 0 10px;
+  }
+
+  nav a {
+    font-size: 21px;
+  }
+
+  .item {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+}
